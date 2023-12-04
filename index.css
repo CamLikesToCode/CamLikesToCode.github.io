@@ -79,7 +79,72 @@ h1:hover {
   letter-spacing: 1px;
 }
 
+.shooting-words-down {
+  position: absolute;
+  left: 45%;
+  top: 375px;
+  animation: shootDown 2s forwards;
+  opacity: 0;
+  font-size: 40px;
+  color:#EAE2B7;
+}
 
+.shooting-words-left {
+  position: absolute;
+  left: 5%;
+  top: 100;
+  animation: shootLeft 2s forwards;
+  opacity: 0;
+  font-size: 40px;
+  color:#EAE2B7;
+}
+
+.shooting-words-up {
+  position: absolute;
+  left: 45%;
+  top: 100;
+  animation: shootUp 2s forwards;
+  opacity: 0;
+  font-size: 40px;
+  color:#EAE2B7;
+}
+
+@keyframes shootDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(300%);
+  }
+}
+
+@keyframes shootLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes shootUp {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(100%);
+    transform: translateY(-100%);
+  }  
+}  
 
 
 /*p {
